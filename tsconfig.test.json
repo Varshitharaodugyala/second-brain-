@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": ".test-dist",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "ES2022",
+    "incremental": false,
+    "declaration": false
+  },
+  "include": ["tests/**/*.ts", "src/lib/validation.ts"],
+  "exclude": ["node_modules", ".next", ".test-dist"]
+}
